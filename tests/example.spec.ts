@@ -18,7 +18,6 @@ test('get started link', async ({ page }) => {
 });
 
 test('Check java page', async({page}) => {
-
 await page.goto('https://playwright.dev/');
 await page.getByRole('link', {name: 'Get Started'}).click();
 await page.getByRole('button', {name: 'Node.js'}).hover();
